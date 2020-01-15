@@ -27,7 +27,8 @@ function flv(opt){
 // 创建解析flv信息的接口
 flv.prototype.info = function(__fn){
     this.__once().then((data)=>{
-        var hex = buffer_to_hex(data)
+        var limit = 20000 // 这里要限制字节数，因为字节太大会获取花费很多时间
+        var hex = buffer_to_hex(data.slice(0, limit))
         var result = parse_flv(hex)
         var message = result.body.__info.body
         __fn(message)
