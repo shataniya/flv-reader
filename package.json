@@ -1,0 +1,24 @@
+{
+  "name": "flv-reader",
+  "version": "1.0.0",
+  "description": "Parse flv video",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shataniya/flv-reader.git"
+  },
+  "keywords": [
+    "flv",
+    "flv-reader"
+  ],
+  "author": "sataniya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shataniya/flv-reader/issues"
+  },
+  "homepage": "https://github.com/shataniya/flv-reader#readme"
+}
